@@ -1,0 +1,113 @@
+:root{
+    --dark:#0100fc;
+    --light: #04d8fe;
+    --main:white;
+    --darktext:black;
+}
+
+body{
+    background-color: var(--main);
+    color: var(--darktext);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Zilla Slab', serif ;
+    font-weight: bold;
+}
+
+.nostyle{
+    color: black;
+    text-decoration: none;
+}
+
+.nostyle:hover{
+    color: black;
+    text-decoration: none;
+}
+.test{
+    border: 1px solid black;
+}
+
+.highlightv1{
+    color: var(--dark);
+}
+.highlightv2{
+    color: var(--light);
+}
+
+
+.standardbg{
+    background-image:url("asset/img/bg/bg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
+.secondbg{
+    background-color: var(--dark);
+    color: white;
+}
+
+
+.section{
+    min-height: 100vh;
+}
+
+.headerstyle{
+    background-color:var(--main);
+}
+
+.contentshadow{
+    box-shadow: 10px 10px var(--dark);
+}
+
+.contentshadowalt{
+    box-shadow: 10px 10px var(--main);
+}
+
+.buttonstyle1{
+    background-color: var(--light);
+    border: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.buttonstyle1:hover{
+    transform: translateY(-5px);
+    box-shadow: 10px 10px var(--dark);
+    transition: 0.5s;
+}
+
+.icon{
+    height: 40px;
+    width: auto;
+    transition: 0.5s;
+}
+
+.icon:hover{
+
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 10px 10px var(--dark);
+    transition: 0.5s;
+    
+}
+
+.standardimage{
+    width: 100%;
+    height: auto;
+}
+
+.specialhighlight{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.specialhighlight:hover{
+    transition: 0.5s;
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
