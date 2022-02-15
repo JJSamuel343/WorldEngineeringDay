@@ -38,7 +38,7 @@ h1{
 
 
 .standardbg{
-    background-image:url("asset/img/bg/bg1.jpg");
+    background-image:url("asset/img/bg/bg1.png");
     background-size: cover;
     background-attachment: fixed;
     background-position:left;
@@ -46,7 +46,7 @@ h1{
 }
 
 .standardbg2{
-    background-image:url("asset/img/bg/bg2.jpg");
+    background-image:url("asset/img/bg/bg2.png");
     background-size: cover;
     background-attachment: fixed;
     background-position:left;
@@ -54,7 +54,7 @@ h1{
 }
 
 .standardbg3{
-    background-image:url("asset/img/bg/bg3.jpg");
+    background-image:url("asset/img/bg/bg3.png");
     background-size: cover;
     background-attachment: fixed;
     background-position:left;
@@ -62,7 +62,7 @@ h1{
 }
 
 .standardbg4{
-    background-image:url("asset/img/bg/bg4.jpg");
+    background-image:url("asset/img/bg/bg4.png");
     background-size: cover;
     background-attachment: fixed;
     background-position:left;
