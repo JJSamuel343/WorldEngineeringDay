@@ -45,6 +45,14 @@ h1{
     background-repeat: no-repeat;
 }
 
+.standardbg2{
+    background-image:url("asset/img/bg/bg2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
 .secondbg{
     background-color: var(--dark);
     color: white;
@@ -66,6 +74,7 @@ h1{
 .contentshadowalt{
     box-shadow: 10px 10px var(--main);
 }
+
 
 .buttonstyle1{
     background-color: var(--light);
