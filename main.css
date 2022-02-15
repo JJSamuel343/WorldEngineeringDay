@@ -1,5 +1,5 @@
 :root{
-    --dark:#0100fc;
+    --dark:#02558b;
     --light: #04d8fe;
     --main:white;
     --darktext:black;
@@ -53,6 +53,22 @@ h1{
     background-repeat: no-repeat;
 }
 
+.standardbg3{
+    background-image:url("asset/img/bg/bg3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
+.standardbg4{
+    background-image:url("asset/img/bg/bg4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
 .secondbg{
     background-color: var(--dark);
     color: white;
@@ -73,6 +89,19 @@ h1{
 
 .contentshadowalt{
     box-shadow: 10px 10px var(--main);
+}
+
+.contentshadowfancy1{
+    box-shadow: 10px 10px #02558b;
+}
+.contentshadowfancy2{
+    box-shadow: 10px 10px #48783e;
+}
+.contentshadowfancy3{
+    box-shadow: 10px 10px #8f1838;
+}
+.contentshadowfancy4{
+    box-shadow: 10px 10px #e01487;
 }
 
 
