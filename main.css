@@ -36,37 +36,44 @@ h1{
     color: var(--light);
 }
 
-
-.standardbg{
-    background-image:url("asset/img/bg/bg1.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position:left;
-    background-repeat: no-repeat;
+.anchor{
+    position: relative;
 }
 
-.standardbg2{
-    background-image:url("asset/img/bg/bg2.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position:left;
-    background-repeat: no-repeat;
+.fancysidebar1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:5%;
+    width: 25px;
+    background-color: #02558b;
 }
 
-.standardbg3{
-    background-image:url("asset/img/bg/bg3.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position:left;
-    background-repeat: no-repeat;
+.fancysidebar2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:5%;
+    width: 25px;
+    background-color: #48783e;
 }
 
-.standardbg4{
-    background-image:url("asset/img/bg/bg4.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position:left;
-    background-repeat: no-repeat;
+.fancysidebar3{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:5%;
+    width: 25px;
+    background-color: #8f1838;
+}
+
+.fancysidebar4{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:5%;
+    width: 25px;
+    background-color: #e01487;
 }
 
 .secondbg{
