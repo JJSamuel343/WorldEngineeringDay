@@ -17,7 +17,7 @@ document.querySelector("body").addEventListener('click', (e) => {
                 if (e.target.classList.contains("fadeout") == true) {
                     if (e.target.classList.contains("check") == true) {
                         e.target.classList.remove("check");
-                        text = "asset/template/" + Navbarvariable[y];
+                        text = "asset/template/" + Navbarvariable[y+1];
                         fetchHtmlAsText(text)
                             .then(data => headerContent.innerHTML = data);
                     }
