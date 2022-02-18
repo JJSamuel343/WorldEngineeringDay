@@ -13,15 +13,16 @@ function onWKAnimEnd() {
 }
 
 document.querySelector('#navbarcontent').addEventListener('click', (e) => {
-    if (e.target.classList.contains('navitem') === true && e.target.classList.contains('navitemactive') === true) {
+    if (e.target.classList.contains('navitem') === true && e.target.classList.contains('navitemactive') === false) {
         if (e.target.classList.contains('closenav') == true) {
             document.getElementById("navbarcontent").classList.remove("fadefromtop1");
             document.getElementById("navbarcontent").classList.add("fadeout");
             document.querySelector('#navbarcontent').addEventListener('webkitAnimationEnd', onWKAnimEnd);
         }
-        else if(e.target.classList.contains('navitem') === true && e.target.classList.contains('navitemactive') === false){
+        else{
             document.getElementById("navbarcontent").classList.remove("fadefromtop1");
             document.getElementById('navbarcontent').classList.add('d-none');
+
 
             y = Array.from(document.querySelector('#navbarcontent').getElementsByClassName("navitem")).indexOf(e.target);
             document.querySelector(".navitemactive").classList.remove("navitemactive");
