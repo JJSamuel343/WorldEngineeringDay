@@ -1,7 +1,7 @@
 document.querySelector("body").addEventListener('click', (e) => {
     if (e.target.classList.contains('navicon') == true) {
         document.getElementById("navbarcontent").classList.remove("d-none");
-        document.getElementById("navbarcontent").classList.add("fadefromtop1");
+        document.getElementById("navbarcontent").classList.add("fadefromright");
     }
 })
 

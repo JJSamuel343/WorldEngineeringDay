@@ -206,7 +206,9 @@ h1{
         opacity: 0;
         }
     
-    
+    .fadefromright{
+        animation: 1s ease-in-out 0s 1 forwards slideInFromRight;;
+    }
     .fadefromleft1{
         animation: 1s ease-in-out 0s 1 forwards slideInFromLeft;
     }
@@ -260,6 +262,17 @@ h1{
           transform: translateX(0);
         }
       }
+      @keyframes slideInFromRight {
+        0% {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+        100% {
+        opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
 
       @keyframes SlidetoRight {
         0% {
