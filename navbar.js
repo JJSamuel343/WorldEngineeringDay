@@ -21,8 +21,7 @@ document.querySelector('#navbarcontent').addEventListener('click', (e) => {
         }
         else{
             document.getElementById("navbarcontent").classList.remove("fadefromtop1");
-            document.getElementById("navbarcontent").classList.add("fadeout");
-            document.querySelector('#navbarcontent').addEventListener('webkitAnimationEnd', onWKAnimEnd);
+            document.getElementById('navbarcontent').classList.add('d-none');
 
             y = Array.from(document.querySelector('#navbarcontent').getElementsByClassName("navitem")).indexOf(e.target);
             document.querySelector(".navitemactive").classList.remove("navitemactive");
