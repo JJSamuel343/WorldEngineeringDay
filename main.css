@@ -5,6 +5,12 @@
     --darktext:black;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url("asset/font/Nexa Slab Bold.woff");
+    font-weight: bold;
+  }
+
 body{
     background-color: var(--main);
     color: var(--darktext);
@@ -12,7 +18,7 @@ body{
 }
 
 h1{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'myFirstFont','Roboto', sans-serif;
     font-weight: bold;
 }
 
