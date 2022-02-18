@@ -154,7 +154,7 @@ h1{
 
 .buttonstyle1{
     background-color: var(--light);
-    color: white;
+    color: var(--dark);
     border: none;
     font-weight: bold;
     transition: 0.5s;
