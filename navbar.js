@@ -13,13 +13,13 @@ function onWKAnimEnd() {
 }
 
 document.querySelector('#navbarcontent').addEventListener('click', (e) => {
-    if (e.target.classList.contains('navitem') === true && e.target.classList.contains('navitemactive') === false) {
+    if (e.target.classList.contains('navitem') === true && e.target.classList.contains('navitemactive') === true) {
         if (e.target.classList.contains('closenav') == true) {
             document.getElementById("navbarcontent").classList.remove("fadefromtop1");
             document.getElementById("navbarcontent").classList.add("fadeout");
             document.querySelector('#navbarcontent').addEventListener('webkitAnimationEnd', onWKAnimEnd);
         }
-        else{
+        else if(e.target.classList.contains('navitem') === true && e.target.classList.contains('navitemactive') === false){
             document.getElementById("navbarcontent").classList.remove("fadefromtop1");
             document.getElementById('navbarcontent').classList.add('d-none');
 
