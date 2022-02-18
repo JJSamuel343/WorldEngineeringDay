@@ -1,6 +1,6 @@
 :root{
-    --dark:#02558b;
-    --light: #04d8fe;
+    --dark:#0000FF;
+    --light: #00D8FF;
     --main:white;
     --darktext:black;
 }
@@ -12,7 +12,7 @@ body{
 }
 
 h1{
-    font-family: 'Zilla Slab', serif ;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
@@ -38,42 +38,77 @@ h1{
 
 .anchor{
     position: relative;
+    overflow-x: hidden;
+}
+
+.navbar{
+    position: absolute;
+    right: 0;  
+    z-index: 1;
+}
+
+.nav{
+  
+    transform: translateX( calc(100% - 100px));
+    transition: 0.5s;
+}
+
+.navitem{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navitem:hover{
+    background-color: var(--light);
+    transition: 0.5s;
+}
+
+.navitemactive{
+    background-color: var(--light);
+}
+
+.navicon{
+    transform: rotate(180deg);
+    width: 50px;
+    height: auto;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.navicon:hover{
+    transform: rotate(180deg) scale(1.1);
+    transition: 0.5s;
+}
+
+.nav:hover{ 
+    transform: translateX( 0%);
+    transition: 0.5s;
+}
+
+.navscreen{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark);
+    z-index: 1;
+    color: white;
 }
 
 .fancysidebar1{
     position: absolute;
     top: 0;
     bottom: 0;
-    left:5%;
+    left:6%;
     width: 25px;
-    background-color: #02558b;
+    background-color: var(--dark);
+   z-index: -1;
 }
 
-.fancysidebar2{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left:5%;
-    width: 25px;
-    background-color: #48783e;
-}
-
-.fancysidebar3{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left:5%;
-    width: 25px;
-    background-color: #8f1838;
-}
-
-.fancysidebar4{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left:5%;
-    width: 25px;
-    background-color: #e01487;
+.headerlogo{
+    width: 40%;
+    height: auto;
 }
 
 .secondbg{
@@ -83,7 +118,8 @@ h1{
 
 
 .section{
-    min-height: 100vh;
+    min-height: calc(100vh - 50px);
+    box-sizing: border-box;
 }
 
 .headerstyle{
@@ -114,6 +150,7 @@ h1{
 
 .buttonstyle1{
     background-color: var(--light);
+    color: white;
     border: none;
     font-weight: bold;
     transition: 0.5s;
@@ -262,3 +299,5 @@ h1{
     
         }
       }
+
+      @
