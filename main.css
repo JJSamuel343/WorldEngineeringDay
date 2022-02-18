@@ -67,6 +67,10 @@ h1{
     background-color: var(--light);
 }
 
+.navsection{
+    min-height: 100vh;
+}
+
 .navicon{
     transform: rotate(180deg);
     width: 50px;
