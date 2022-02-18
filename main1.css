@@ -166,7 +166,18 @@ h1{
     transform: translateY(-5px) scale(1.1);
     box-shadow: 10px 10px var(--dark);
     transition: 0.5s;
-    
+}
+
+.icon2{
+    height: 40px;
+    width: auto;
+    transition: 0.5s;
+}
+
+.icon2:hover{
+
+    transform: translateY(-5px) scale(1.1);
+    transition: 0.5s;
 }
 
 .standardimage{
