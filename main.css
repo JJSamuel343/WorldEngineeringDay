@@ -137,16 +137,7 @@ h1{
 }
 
 .contentshadowfancy1{
-    box-shadow: 10px 10px #02558b;
-}
-.contentshadowfancy2{
-    box-shadow: 10px 10px #48783e;
-}
-.contentshadowfancy3{
-    box-shadow: 10px 10px #8f1838;
-}
-.contentshadowfancy4{
-    box-shadow: 10px 10px #e01487;
+    box-shadow: 10px 10px var(--dark);
 }
 
 
