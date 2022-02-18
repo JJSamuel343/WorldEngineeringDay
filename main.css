@@ -100,7 +100,8 @@ h1{
     left: 0;
     top: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
+    overflow: hidden;
     background-color: var(--dark);
     z-index: 1;
     color: white;
