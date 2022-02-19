@@ -5,9 +5,9 @@ document.querySelector("body").addEventListener('click', (e) => {
     }
     if (e.target.classList.contains("mainpagenavi") == true) {
 
-        z = Array.from(document.querySelector('#contentcontainer').getElementsByClassName("mainpagenavi")).indexOf(e.target);
+        y = Array.from(document.querySelector('#contentcontainer').getElementsByClassName("mainpagenavi")).indexOf(e.target);
         document.querySelector(".navitemactive").classList.remove("navitemactive");
-        document.querySelectorAll(".navitem")[z+1].classList.add("navitemactive");
+        document.querySelectorAll(".navitem")[y+1].classList.add("navitemactive");
         headerContent = document.getElementById("contentcontainer");
         document.querySelector(".section").classList.remove("fadein");
         document.querySelector(".section").classList.add("fadeout", "check");
@@ -17,7 +17,7 @@ document.querySelector("body").addEventListener('click', (e) => {
                 if (e.target.classList.contains("fadeout") == true) {
                     if (e.target.classList.contains("check") == true) {
                         e.target.classList.remove("check");
-                        text = "asset/template/" + Navbarvariable[z+1];
+                        text = "asset/template/" + Navbarvariable[y+1];
                         fetchHtmlAsText(text)
                             .then(data => headerContent.innerHTML = data);
                     }
