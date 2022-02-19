@@ -1,5 +1,5 @@
 
-Navbarvariable = ["home.html","about.html","mranti.html","livestage.html","competition.html"];
+Navbarvariable = ["home.html","about.html","livestage.html","competition.html"];
 
 
 async function fetchHtmlAsText(url) {

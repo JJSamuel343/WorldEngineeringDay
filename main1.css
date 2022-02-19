@@ -53,6 +53,12 @@ h1{
     z-index: 1;
 }
 
+.nav{
+  
+    transform: translateX( calc(100% - 100px));
+    transition: 0.5s;
+}
+
 .navitem{
     cursor: pointer;
     transition: 0.5s;
@@ -84,7 +90,10 @@ h1{
     transition: 0.5s;
 }
 
-
+.nav:hover{ 
+    transform: translateX( 0%);
+    transition: 0.5s;
+}
 
 .navscreen{
     position: absolute;
