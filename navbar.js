@@ -3,7 +3,7 @@ document.querySelector("body").addEventListener('click', (e) => {
         document.getElementById("navbarcontent").classList.remove("d-none");
         document.getElementById("navbarcontent").classList.add("fadefromright");
     }
-    if (e.target.classList.contains("mainpagenavi") == true) {
+    else if (e.target.classList.contains("mainpagenavi") == true) {
 
         y = Array.from(document.querySelector('#contentcontainer').getElementsByClassName("mainpagenavi")).indexOf(e.target);
         document.querySelector(".navitemactive").classList.remove("navitemactive");
