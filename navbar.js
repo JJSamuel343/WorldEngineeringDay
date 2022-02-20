@@ -6,6 +6,7 @@ document.querySelector("body").addEventListener('click', (e) => {
     else if (e.target.classList.contains("mainpagenavi") == true) {
 
         z = Array.from(document.querySelector('#contentcontainer').getElementsByClassName("mainpagenavi")).indexOf(e.target);
+        console.log("mainpagenavi:" + z);
         document.querySelector(".navitemactive").classList.remove("navitemactive");
         document.querySelectorAll(".navitem")[z+1].classList.add("navitemactive");
         headerContent = document.getElementById("contentcontainer");
@@ -48,6 +49,7 @@ document.querySelector('#navbarcontent').addEventListener('click', (e) => {
 
 
             y = Array.from(document.querySelector('#navbarcontent').getElementsByClassName("navitem")).indexOf(e.target);
+            console.log("mainpagenavi:" + y);
             document.querySelector(".navitemactive").classList.remove("navitemactive");
             e.target.classList.add("navitemactive");
             headerContent = document.getElementById("contentcontainer");
