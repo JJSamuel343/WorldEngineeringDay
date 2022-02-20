@@ -26,7 +26,6 @@ document.querySelector("body").addEventListener('click', (e) => {
             }
         })
 
-        document.querySelector('#contentcontainer').removeEventListener
     }
 
 })
