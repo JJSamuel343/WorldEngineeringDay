@@ -49,7 +49,7 @@ document.querySelector('#navbarcontent').addEventListener('click', (e) => {
 
 
             y = Array.from(document.querySelector('#navbarcontent').getElementsByClassName("navitem")).indexOf(e.target);
-            console.log("mainpagenavi:" + y);
+            console.log("navitem:" + y);
             document.querySelector(".navitemactive").classList.remove("navitemactive");
             e.target.classList.add("navitemactive");
             headerContent = document.getElementById("contentcontainer");
