@@ -6,7 +6,7 @@ document.querySelector("body").addEventListener('click', (e) => {
     else if (e.target.classList.contains("mainpagenavi") == true) {
 
         z = Array.from(document.querySelector('#contentcontainer').getElementsByClassName("mainpagenavi")).indexOf(e.target);
-        console.log("mainpagenavi:" + z);
+        console.log("mainpagenavi:" + (z+1));
         document.querySelector(".navitemactive").classList.remove("navitemactive");
         document.querySelectorAll(".navitem")[z+1].classList.add("navitemactive");
         headerContent = document.getElementById("contentcontainer");
