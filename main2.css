@@ -47,65 +47,8 @@ h1{
     overflow-x: hidden;
 }
 
-.navbar{
-    position: absolute;
-    right: 0;  
-    z-index: 1;
-}
 
-.nav{
-  
-    transform: translateX( calc(100% - 100px));
-    transition: 0.5s;
-}
 
-.navitem{
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.navitem:hover{
-    background-color: var(--light);
-    transition: 0.5s;
-}
-
-.navitemactive{
-    background-color: var(--light);
-}
-
-.navsection{
-    min-height: 100vh;
-}
-
-.navicon{
-
-    width: 50px;
-    height: auto;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.navicon:hover{
-    transform: rotate(180deg) scale(1.1);
-    transition: 0.5s;
-}
-
-.nav:hover{ 
-    transform: translateX( 0%);
-    transition: 0.5s;
-}
-
-.navscreen{
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 100vw;
-    overflow: hidden;
-    background-color: var(--dark);
-    z-index: 1;
-    color: white;
-}
 
 .fancysidebar1{
     position: absolute;
@@ -127,9 +70,41 @@ h1{
     color: white;
 }
 
+.whitebg{
+    background-color: var(--main);
+    color: black;
+}
+
+.nav-link{
+    font-weight: bold;
+    color:black !important;
+    transition: 0.5s;
+    
+}
+
+.nav-link:hover{
+    background-color: var(--light);
+    border: none;
+    font-weight: bold;
+    color: var(--dark) !important;
+    transform: translateY(-5px);
+    box-shadow: 10px 10px var(--dark);
+    transition: 0.5s;
+}
+
+.active{
+    background-color: var(--light);
+    border: none;
+    font-weight: bold;
+    color: var(--dark) !important;
+    transform: translateY(-5px);
+    box-shadow: 10px 10px var(--dark);
+    transition: 0.5s;
+}
+
 
 .section{
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh);
     box-sizing: border-box;
 }
 
