@@ -139,6 +139,12 @@ h1{
     transition: 0.5s;
 }
 
+.buttonstyle1active{
+    transform: translateY(-5px);
+    box-shadow: 10px 10px var(--dark);
+    transition: 0.5s;
+}
+
 .icon{
     height: 40px;
     width: auto;
