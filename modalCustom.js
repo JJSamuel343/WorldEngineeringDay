@@ -1,5 +1,5 @@
 
-let database = ["p4ArZyZ859Q","p4ArZyZ859Q","p4ArZyZ859Q","p4ArZyZ859Q","p4ArZyZ859Q","p4ArZyZ859Q","p4ArZyZ859Q","p4ArZyZ859Q","p4ArZyZ859Q","BlbspOrcFEo","BlbspOrcFEo","BlbspOrcFEo","BlbspOrcFEo","BlbspOrcFEo","BlbspOrcFEo","BlbspOrcFEo","BlbspOrcFEo","BlbspOrcFEo","BlbspOrcFEo"]
+let database =["p4ArZyZ859Q","p4ArZyZ859Q","p4ArZyZ859Q","p4ArZyZ859Q","BlbspOrcFEo","BlbspOrcFEo"];
 
 document.querySelector('body').addEventListener('click', (e) => {
     if (e.target.classList.contains("loadmodalbutton") == true) {
