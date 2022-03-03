@@ -8,10 +8,10 @@ document.querySelector('body').addEventListener('click', (e) => {
         document.getElementById("videoframe").src = "https://www.youtube.com/embed/"+database[y];
     }
 
-    else if(e.target.id == "closemodal" && (document.getElementById("videoframe").src !== "about:blank")){
+    else if(e.target.id == "closemodal"){
         document.getElementById("videoframe").src = "about:blank";
     }
-    else if((e.target.id == "exampleModal") || (e.target.classname != "modal-header") || (e.target.classname != "modal-body") || (document.getElementById("videoframe").src !== "about:blank")){
+    else if((e.target.id == "exampleModal") && (e.target.classname != "modal-header") && (e.target.classname != "modal-body")){
         document.getElementById("videoframe").src = "about:blank";
     }
     else{
