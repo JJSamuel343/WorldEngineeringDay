@@ -16,4 +16,4 @@ document.querySelector('body').addEventListener('click', (e) => {
     }
     else{
     }
-    })
+})
