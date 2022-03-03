@@ -4,7 +4,7 @@ let database = [""]
 document.querySelector('body').addEventListener('click', (e) => {
     if (e.target.classList.contains("loadmodalbutton") == true) {
         y = Array.from(document.querySelector('body').getElementsByClassName("loadmodalbutton")).indexOf(e.target);
-        console.log(y);
+        console.log(`Modal.js-onClick-index:${y}`,database[y]);
         document.getElementById("videoframe").src = "https://www.youtube.com/embed/"+database[y];
     }
 
