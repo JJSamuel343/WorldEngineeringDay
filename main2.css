@@ -65,6 +65,16 @@ h1{
     height: auto;
 }
 
+.altbg{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.specialbutton{
+    width: 250px;
+    height: 250px;
+}
+
 .secondbg{
     background-color: var(--dark);
     color: white;

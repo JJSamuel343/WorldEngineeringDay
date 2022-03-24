@@ -50,7 +50,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light whitebg" style="width:100vw">
         <div class="container-fluid  ps-md-5 pe-md-5">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="asset\img\logo\meranti.png" alt="" width="auto" height="50px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -63,13 +63,23 @@
                     <li class="nav-item ms-md-1 me-md-1">
                         <a class="nav-link active" aria-current="page" href="index.html#homescreen">Home</a>
                     </li>
+                    <li class="nav-item dropdown ms-md-1 me-md-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Vote
+                        </a>
+                        <ul class="dropdown-menu ms-md-1 me-md-1" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="biomimicryfinalist.html">Engineering Biomimicry</a></li>
+                            <li><a class="dropdown-item" href="geodesicdomefinalist.html">Geodesic Dome Design</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item ms-md-1 me-md-1">
                         <a class="nav-link" href="aboutevent.html">About Event</a>
                     </li>
                     <li class="nav-item ms-md-1 me-md-1">
                         <a class="nav-link" href="aboutmranti.html">About MRANTI</a>
                     </li>
-                    <li class="nav-item ms-md-1 me-md-1">
+                    <li class="nav-item ms-md-1 me-md-1 d-none">
                         <a class="nav-link" href="challenges.html">Challenges</a>
                     </li>
                     <li class="nav-item ms-md-1 me-md-1 d-none">
@@ -97,8 +107,8 @@
                     </div>
                     <div class="col-2 col-md-2 col-xl-1 d-md-none"></div>
                     <div class="col-9 text-start p-0">
-                        <a href="#schedule" class="nostyle hideori fadefromtop4">
-                            <button class="m-1 buttonstyle1 p-2 pe-4 ps-4">Register Here</button>
+                        <a href="#votenow" class="nostyle hideori fadefromtop4">
+                            <button class="m-1 buttonstyle1 p-2 pe-4 ps-4">Vote Now</button>
                         </a>
                     </div>
                 </div>
@@ -110,23 +120,67 @@
             <div class="fancysidebar1"></div>
         </div>
 
+
         <div class="row p-0 m-0 justify-content-center section secondbg align-content-center section anchor hideori fadein pt-5 pb-5"
             id="livestage">
+ 
+            <div class="col-10  p-0 m-0 text-center mt-0 mt-md-5 d-none">
+                <h1 class="highlightv2">Live Stage</h1>
+                <h5>Join in the festivities here</h5>
+            </div>
 
-            <div class="col-10  p-0 m-0 text-center">
-                <h1 class="highlightv2">Announcement</h1>
-                <h5>Keep update with what is happening here</h5>
+            <div class="col-sm-6 col-10  p-0 mt-4 hideori fadefromtop3 d-none">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/i1HnUr3aeNE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
-            <div class="col-10 col-sm-7  p-0 mt-4 hideori fadefromtop3">
-                <img src="asset\img\Poster\test.jpg" class="standardimage" alt="">
+            <div class="col-sm-3 col-10  mt-4 p-0 hideori fadefromtop4 d-none">
+                <iframe width="100%" height="500px"
+                    src="https://www.youtube.com/live_chat?v=i1HnUr3aeNE&amp;embed_domain=rejuvenatemy.com"></iframe>
             </div>
-            <div class="col-10 col-sm-7  p-0 mt-4 hideori fadefromtop3">
-                <img src="asset\img\Poster\test2.jpg" class="standardimage" alt="">
+
+            <div class="col-12 mt-5 mb-5 p-0 " id="votenow">
+                <div class="row p-0 m-0 justify-content-center align-content-center section">
+                    <div class="col-10 col-md-12  p-0 m-0 text-center mt-5 mb-5">
+                        <h1 class="highlightv2">Meet All Our Engineering Challenge Finalists</h1>
+                        <h5>Vote for your favourite team now!</h5>
+                    </div>
+
+                    <div class="col text-center text-sm-end p-1">
+                        <a href="biomimicryfinalist.html">
+                            <button class="specialbutton buttonstyle1">Engineering Biomimicry Challenge
+                                Finalist</button>
+                        </a>
+                    </div>
+
+                    <div class="col text-center text-sm-start p-1">
+                        <a href="geodesicdomefinalist.html">
+                            <button class="specialbutton buttonstyle1">Geodesic Dome Design Challenge Finalist</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 p-0 m-0 pb-5">
+                <div class="row p-0 m-0 justify-content-center justify-content-md-start justify-content-lg-center">
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-4 col-xl-3 p-0 m-0">
+                        <img src="asset\poster\1.jpg" class="standardimage" alt="">
+                    </div>
+
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-4 col-xl-3 p-0 m-0">
+                        <img src="asset\poster\2.jpg" class="standardimage" alt="">
+                    </div>
+
+                    <div class="col-12 col-sm-10 col-md-6 col-lg-4 col-xl-3 p-0 m-0">
+                        <img src="asset\poster\3.jpg" class="standardimage" alt="">
+                    </div>
+                </div>
             </div>
 
         </div>
 
-        
+
 
         <div class="row p-0 m-0 justify-content-center align-content-center section pt-5 pb-5  anchor hideori fadein"
             id="schedule">
@@ -135,8 +189,8 @@
                 <div class="row p-0 m-0 justify-content-start justify-content-lg-center align-content-center">
                     <div class="col-12 headerstyle pt-4 pb-4">
                         <h5>Virtual MRANTI World Engineering Day 2022</h5>
-                        <h1 class="highlightv1">Whats Happening</h1>
-                        <h5>How you can be apart of MRANTI's World Engineering Day</h5>
+                        <h1 class="highlightv1">What's Happening</h1>
+                        <h5>How you can be part of the celebration </h5>
 
                     </div>
                 </div>
@@ -145,7 +199,7 @@
             <div class=" col-8 col-lg-6 mt-4 mt-lg-0 datecontentbox datecontentboxactive hideori fadefromleft1">
                 <div class="row p-0 justify-content-start align-content-center">
 
-                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5 hideori fadefromleft3">
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5 hideori fadefromleft3 d-none">
                         <div class="pb-4">
                             <h5>Submission Date | 10 March 2022</h5>
                             <h4 class="highlightv1">Quizzes based on Pocket Talks: Technology Sharing & Career Paths
@@ -159,29 +213,35 @@
                         </div>
                     </div>
 
-                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5 hideori fadefromleft4">
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5 hideori fadefromleft3">
                         <div class="pb-4">
-                            <h5>Submission Date | 19 March 2022</h5>
+                            <h5>26 March 2022 | Saturday </h5>
                             <h4 class="highlightv1"> Engineering Challenge 1: Biomimicry Ideas for Sustainability</h4>
+                            <h5>1400 - 1630 </h5>
                             <p>Nature is full of wonder. Immerse yourself into nature and let’s learn how we can look at
                                 nature for inspiration to engineer a sustainable future. Learn more on the method to
                                 emulate nature's forms, processes, and ecosystems to create more sustainable designs.
                             </p>
-                            <a href="https://forms.gle/v2Wk7x68FCsRgH3X8" target="blank" class="nostyle">
-                                <button type="button" class="buttonstyle1  p-2 pe-4 ps-4">Join Now</button>
+                            <hr>
+                            <p>Vote for your favourite team now!</p>
+                            <a href="biomimicryfinalist.html" class="nostyle">
+                                <button type="button" class="buttonstyle1  p-2 pe-4 ps-4">Vote Here</button>
                             </a>
                         </div>
                     </div>
 
-                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5 hideori fadefromleft2">
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5 hideori fadefromleft4">
                         <div class="pb-4">
-                            <h5>Submission Date | 20 March 2022</h5>
+                            <h5>27 March 2022 | Sunday </h5>
                             <h4 class="highlightv1"> Engineering Challenge 2: Paper Geodesic Dome</h4>
+                            <h5>1400 - 1630</h5>
                             <p>Geodesic Dome is one of the most efficient human shelters design and known to be energy
                                 efficient. This session will equip you with the know-how to share the knowledge of
                                 building this sophisticated and sustainable design. </p>
-                            <a href="https://forms.gle/cFWhGbRCKizStdYu5" target="blank" class="nostyle">
-                                <button type="button" class="buttonstyle1  p-2 pe-4 ps-4">Join Now</button>
+                            <hr>
+                            <p>Vote for your favourite team now!</p>
+                            <a href="geodesicdomefinalist.html" class="nostyle">
+                                <button type="button" class="buttonstyle1  p-2 pe-4 ps-4">Vote Here</button>
                             </a>
                         </div>
                     </div>
