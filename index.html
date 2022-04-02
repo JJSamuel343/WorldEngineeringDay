@@ -32,6 +32,23 @@
 </head>
 
 <body class="anchor">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        id="closemodal"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="500px" src="..." title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen id="videoframe"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <nav class="navbar fixed-top navbar-expand-lg navbar-light whitebg" style="width:100vw">
         <div class="container-fluid  ps-md-5 pe-md-5">
             <a class="navbar-brand" href="index.html">
@@ -120,7 +137,8 @@
                     allowfullscreen></iframe>
             </div>
 
-            <div class="col-sm-3 col-10 ms-0 ms-sm-2  mt-4 p-0 hideori fadein4" id="chat-embed-wrapper">
+            <div class="col-auto d-none d-sm-block ms-0 ms-sm-2  mt-4 p-0 " id="chat-embed-wrapper"
+                style="height:500px">
             </div>
 
             <div class="col-12 mt-5 mb-5 p-0 " id="votenow">
@@ -164,16 +182,24 @@
         </div>
 
 
-
-        <div class="row p-0 m-0 justify-content-center align-content-center section pt-5 pb-5  anchor hideori fadein"
+        <div class="row p-0 m-0 justify-content-center align-content-center section pb-5  anchor hideori fadein"
             id="schedule">
 
             <div class="col-12 col-lg-5 d-flex align-items-start hideori fadefromleft2">
                 <div class="row p-0 m-0 justify-content-start justify-content-lg-center align-content-center">
                     <div class="col-12 headerstyle pt-4 pb-4">
                         <h5>Virtual MRANTI World Engineering Day 2022</h5>
-                        <h1 class="highlightv1">What's Happening</h1>
-                        <h5>How you can be part of the celebration </h5>
+                        <h1 class="highlightv1">Whats Happened</h1>
+                        <h5>Rewatch past sessions.</h5>
+                    </div>
+                    <div class="col-2 col-md-2 col-xl-1"></div>
+                    <div class="col-9" id="dateselector">
+
+                        <a>Date:</a>
+                        <button class="m-1 buttonstyle1 p-2 pe-4 ps-4 dateselectbutton buttonstyle1active">4th
+                            March</button>
+                        <button class="m-1 buttonstyle1 p-2 pe-4 ps-4 dateselectbutton">5th March</button>
+                        <button class="m-1 buttonstyle1 p-2 pe-4 ps-4 dateselectbutton">Finale</button>
 
                     </div>
                 </div>
@@ -182,19 +208,207 @@
             <div class=" col-8 col-lg-6 mt-4 mt-lg-0 datecontentbox datecontentboxactive hideori fadefromleft1">
                 <div class="row p-0 justify-content-start align-content-center">
 
-                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5 hideori fadefromleft3 d-none">
-                        <div class="pb-4">
-                            <h5>Submission Date | 10 March 2022</h5>
-                            <h4 class="highlightv1">Quizzes based on Pocket Talks: Technology Sharing & Career Paths
-                            </h4>
-                            <p>Immersive and imaginative. Nothing sparks curiosity, interest and inspiration like our
-                                Pocket Talks that showcases technologies through 20-minute pocket talks with interesting
-                                topics ranging from International Space Station exploration to emerging technologies
-                                like dronetech & augmented reality and many more.</p>
-                            <button type="button" class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4"
-                                data-bs-toggle="modal" data-bs-target="#iframe-modal">Watch Past Session</button>
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>0920 - 0930 | +8GMT</h5>
+                            <h4 class="highlightv1">Opening Address </h4>
+                            <p>by Datuk Zainal Abidin, KSU Mosti</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+
                         </div>
                     </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>0930 - 0940 | +8GMT</h5>
+                            <h4 class="highlightv1">Welcoming Address </h4>
+                            <p>by Dzuleira Abu Bakar, CEO, MRANTI</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>0940 - 0950 | +8GMT</h5>
+                            <h4 class="highlightv1">Engineering Impact Actions Across Generations </h4>
+                            <p>by Ir. Ong Ching Loon, President, IEM</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>0940 - 1020 | +8GMT</h5>
+                            <h4 class="highlightv1">Engineering Without Borders - Climate Action </h4>
+                            <p>by Sanjiv Indran, President, EWB</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>1025 - 1055 | +8GMT</h5>
+                            <h4 class="highlightv1">Journey In Innovation </h4>
+                            <p>by Leslie Lok, (Retired) President & CEO, Siemens Taiwan</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>1100 - 1115 | +8GMT</h5>
+                            <h4 class="highlightv1">Women In Engineering </h4>
+                            <p>by Ir. Prof. Dr. Norlida Buniyamin, Deputy President, IEM</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>1115 - 1130 | +8GMT</h5>
+                            <h4 class="highlightv1">Celebrating Bright Minds - James Dyson Award </h4>
+                            <p>by Ho Man-Yi, James Dyson Foundation</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>1135 - 1220 | +8GMT</h5>
+                            <h4 class="highlightv1">Panel - Engineering Sustainable Cities </h4>
+                            <p> with Gary Gan (CEO, Hexa Group), Sethu Raj Munusamy (CEO, Midwest Composite), Dr. Jay
+                                Desan (Co-Founder, BoomGrow), James Mitchell (TATA Consultancy Services), and moderated
+                                by Dr. Rozzeta (Senior Lecturer, UTM)</p>
+                                <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>1500 - 1530 | +8GMT</h5>
+                            <h4 class="highlightv1">Future of Engineering - What’s Next for AI and Multi-Universes
+                                Transforming Our Lives? </h4>
+                            <p>by Ettikan, NVIDIA</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class=" col-8 col-lg-6 mt-4 mt-lg-0 datecontentbox  hideori fadefromleft1 d-none">
+                <div class="row p-0 justify-content-start align-content-center">
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>0900 - 0910 | +8GMT</h5>
+                            <h4 class="highlightv1">Welcoming Address </h4>
+                            <p>by Ts. Natalya Dato’ Shamsuar, Faculty of Creative Media, MMU</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>0910 - 0930 | +8GMT</h5>
+                            <h4 class="highlightv1">Becoming An Engineer </h4>
+                            <p>by Ir. Megat Johari, Board of Engineers Malaysia</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>0930 - 0950 | +8GMT</h5>
+                            <h4 class="highlightv1">Exploring the International Space Station </h4>
+                            <p>by Sam Gibbs, STREAMLine Education</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>0950 - 1010 | +8GMT</h5>
+                            <h4 class="highlightv1">Ready for An Augmented Reality World? </h4>
+                            <p>by Eedham Rasheed, CEO, Hologo World, Maldives</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>1010 - 1040 | +8GMT</h5>
+                            <h4 class="highlightv1">Q&A Session </h4>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>1050 - 1110 | +8GMT</h5>
+                            <h4 class="highlightv1">Engineering for the Future </h4>
+                            <p>by Prof Andy Chan, Vice-Provost, Nottingham University</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>1110 - 1130 | +8GMT</h5>
+                            <h4 class="highlightv1">3D Printing </h4>
+                            <p>by Bruce Mui, Malaysia Additive Manufacturing Assoc</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>1130 - 1150 | +8GMT</h5>
+                            <h4 class="highlightv1">DroneTech </h4>
+                            <p> with William Alvisse, Honorary Secretary, MUDAS</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>1150 - 1210 | +8GMT</h5>
+                            <h4 class="highlightv1">Robotic Assisted Surgery </h4>
+                            <p>by Premila Dharan, Medtronics Germany</p>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+                    <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5  ">
+                        <div class="pb-3">
+                            <h5>1210 - 1230 | +8GMT</h5>
+                            <h4 class="highlightv1">Q&A Session</h4>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" col-8 col-lg-6 mt-4 mt-lg-0 datecontentbox  hideori fadefromleft1 d-none">
+                <div class="row p-0 justify-content-start align-content-center">
 
                     <div class="col-12 contentshadowfancy1 d-flex align-items-center mt-5 hideori fadefromleft3">
                         <div class="pb-4">
@@ -207,9 +421,8 @@
                             </p>
                             <hr>
                             <p>Vote for your favourite team now!</p>
-                            <a href="biomimicryfinalist.html" class="nostyle">
-                                <button type="button" class="buttonstyle1  p-2 pe-4 ps-4">Vote Here</button>
-                            </a>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
                         </div>
                     </div>
 
@@ -223,9 +436,8 @@
                                 building this sophisticated and sustainable design. </p>
                             <hr>
                             <p>Vote for your favourite team now!</p>
-                            <a href="geodesicdomefinalist.html" class="nostyle">
-                                <button type="button" class="buttonstyle1  p-2 pe-4 ps-4">Vote Here</button>
-                            </a>
+                            <button class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Watch Here</button>
                         </div>
                     </div>
 
@@ -250,17 +462,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script>
-        let frame = document.createElement("iframe");
-        frame.referrerPolicy = "origin";
-        frame.src = "https://www.youtube.com/live_chat?v=wNz3ZWPhEC4&embed_domain=" + window.location.hostname;
-        frame.frameBorder = "0";
-        frame.id = "chat-embed";
-        frame.height = "500px"
-        frame.width = "100%"
-        let wrapper = document.getElementById("chat-embed-wrapper");
-        wrapper.appendChild(frame); 
-    </script>
+    <script src="dateselector.js"></script>
+    <script src="modalCustom2.js"></script>
+
 
 
 
